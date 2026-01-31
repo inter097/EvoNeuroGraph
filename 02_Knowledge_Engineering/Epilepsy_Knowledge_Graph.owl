@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/epilepsy.owl"
+         xmlns="http://test.org/epilepsy.owl#">
+
+<owl:Ontology rdf:about="http://test.org/epilepsy.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_symptom">
+  <rdfs:domain rdf:resource="#EpilepsySyndrome"/>
+  <rdfs:range rdf:resource="#ClinicalSign"/>
+  <rdfs:range rdf:resource="#SeizureType"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#EpilepsySyndrome">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ClinicalSign">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SeizureType">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#OnsetAge">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#prolonged">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tonic">
+  <rdf:type rdf:resource="#SeizureType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seizure">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#clónica">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#neonatal">
+  <rdf:type rdf:resource="#OnsetAge"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#motor">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#regression">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#adolescent">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fever">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#clonic">
+  <rdf:type rdf:resource="#SeizureType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#retardation">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#absence">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#infection">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#encephalopathy">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#delay">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#atonic">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#family_history">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#childhood">
+  <rdf:type rdf:resource="#OnsetAge"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#generalized">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#awareness">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#spasms">
+  <rdf:type rdf:resource="#SeizureType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#migrating">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#onset">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#autism">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#infancy">
+  <rdf:type rdf:resource="#OnsetAge"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cognitive">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#febrile_seizure">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#focal">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#EIDEE">
+  <rdf:type rdf:resource="#EpilepsySyndrome"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dravet_Syndrome">
+  <rdf:type rdf:resource="#EpilepsySyndrome"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#EIMFS">
+  <rdf:type rdf:resource="#EpilepsySyndrome"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
